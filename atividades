@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    /*foi realizada uma pesquisa sobre algumas caracteristicas fisicas da populacao de certa
+    regiao, a qual coletou os seguintes dados referentes a cada habitante para analise:
+    - Sexo
+    - Cor dos olhos (a - azuis, v - verde, c - castanhos)
+    - Cor dos cabelos (L - louro, C - castanho, P -preto)
+    - Idade
+    Faça um algoritmo que calcule e escreva:
+    -Maior idade dos habitantes
+    - o numero de individuos do sexo feminino cuja idade esta entre 18 e 35 anos, tenham olhos
+    verdes e cabelos louros.
+    O final da entrada de dados é conhecido quando informado 'Fim' para o conteudo da variavel
+    sexo.
+    char sexo [4], olhos, cabelos;
+    int idade, quant =0, maior =0;
+    while (1){
+    printf("Informe sexo (masc/fem/fim");
+    scanf("%s", sexo);
+    setbuf(stdin,NULL);
+    if(strcmp(sexo,"fim")==0)
+        break;
+    printf("Cor dos olhos (a - azuis, v - verde, c - castanhos)");
+    scanf("c", &olhos);
+    setbuf(stdin,NULL);
+    printf("Cor dos cabelos (L - louro, C - castanho, P -preto)");
+    scanf("c", &cabelos);
+    setbuf(stdin,NULL);
+    printf("Informe idade");
+    scanf("%d",&idade);
+    if(idade > maior)
+        maior = idade;
+    if(strcamp(sexo,"fem")==0)
+       printf("\nPassou no teste sexo");
+    if(idade >= 18 && idade <=35)
+        printf("\nPassou no teste de idade");
+    if(olhos ==v)
+        printf("\nPassou no teste de cor de olhos");
+    if(cabelo ==L)
+        printf("\nPassou no teste de cor de cabelo");
+    quant++;*/
+    /*
+
+    Exemplo
+    ////////////////////////////////////////////////////////////////////////////////////
+        int cont;
+        for(cont=1; cont<= 100; cont++){
+            printf(" %d", cont);
+        }
+    ///////////////////////////////////////////////////////////////////////////////////
+    int vc;
+    float soma, nota, media;
+    for (vc=1, soma=0; vc<=5; vc++){
+    printf("Informe uma nota:");
+    scanf("%f", &nota);
+    soma = soma+ nota;
+    media = soma/5;
+    printf("medias das nota %.2f", media);}
+    ////////////////////////////////////////////////////////////////////////////////////
+    Atividades
+    escreva um programa em C para calcular e escrever a soma dos números
+    compreendidos entre 85 e 907.
+    int cont = 85;
+    int soma = 0;
+    for (cont >=85; cont<=907; cont++){
+    soma = soma+cont;
+    }
+    printf(" %d", soma);
+    ///////////////////////////////////////////////////////////////////////////////////
+    Escreva um programa em C para ler as notas de 5 alunos (duas notas) calcular e
+    escrever a media de cada aluno e o conceito aprovado ou reprovado (media 7) e a
+    media dos alunos.
+    int aluno;
+    float nota1, nota2, soma, media;
+    for(aluno=1, soma=0; aluno<=5; aluno++){
+    printf("\nInforme primeira nota");
+    scanf("%f", &nota1);
+    printf("\nInforme segunda nota");
+    scanf("%f", &nota2);
+    soma = nota1 + nota2;
+    media = soma/2;
+    printf("Medias das notas %.2f", media);
+    if(media>=7){
+    printf("\nAprovado");
+    }else
+    if(media<7){
+    printf("\nReprovado");
+    soma =+ media;
+    }
+    }
+    media = soma / 5;
+    printf("\nMedia da turma: %.1f", media);
+    return 0;
+    }*/
+/////////////////////////////////////////////////////////////////////////////////////
+    /*Escreva um programa em C para calcular e escrever o valor de E, sendo que o
+    valor de N deverá ser informado pelo usuário.
+    E = 1 + 1/1! + 1/2! + 1/3! + .....+ 1/n!
+    int vc, num, fat, cont;
+    float e = 1;
+    printf("Informe valor:");
+    scanf("%d",&num);
+    for(vc=1; vc<=num; vc++){
+       fat= 1;
+    for(cont=1; cont<=vc; cont++){
+        fat = fat *  cont;
+    }
+    e = e + (float)1 / fat;
+    }
+    printf("\nValor calculado de E: %.8f", e);
+    return 0;
+    }*/
+///////////////////////////////////////////////////////////////////////////////////////////
+    /*Escreva um programa em C para ler um número qualquer calcular e escrever a
+    soma dos números inteiros de 1 até o número
+    int vc, num, soma=0;
+    printf("Informe numero:");
+    scanf("%d", &num);
+    for(vc=1; vc<=num; vc++){
+    soma = soma + vc;
+    }
+    printf("\nSoma:%d", soma);*/
+//////////////////////////////////////////////////////////////////////////////////////////
+    /*Escreva um programa em C para calcular e escreve a soma dos dez primeiros
+    termos da série
+    série = 2/500 - 5/450 + 2/400 - 5/350 +........
+    int vc, numerador = 2, denominador = 500;
+    float serie = 0;
+    for(vc=1; vc<=10; vc++)
+    {
+
+    if(numerador == 2)
+    {
+        serie = serie + (float)numerador/denominador;
+        numerador = -5;
+    }
+    else
+    {
+        serie = serie + (float)numerador/denominador;
+        numerador = 2;
+    }
+    denominador =denominador - 50;
+}
+printf("\nValor da series: %.4f", serie);
+return 0;
+}*/
